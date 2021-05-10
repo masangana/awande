@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "823278231411",
+    "project_id": "awande-5da51",
+    "storage_bucket": "awande-5da51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823278231411:android:548bdd8d16179af64eef06",
+        "android_client_info": {
+          "package_name": "com.pthat.awande"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823278231411-b8n46e2gsn7p7tr8998asarhlc9s8ngm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3yoaB5HSHiwndLHhVJgmUIiClWV5jdJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823278231411-b8n46e2gsn7p7tr8998asarhlc9s8ngm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Awa Nde</string>
+
+    <!-- Home Page -->
+
+    <string name="home_page_title">Derniers Lieux</string>
+    <string name="home_page_last_palce_secteion">Nos Lieux</string>
+
+    <!-- collection -->
+    <string name="collection_page_title">Mon coup de coeur</string>
+
+    <!-- Page d'ajout d'un lieu -->
+    <string name="add_place_title">Ajout d\'un lieu</string>
+    <string name="add_place_upload_button">Charger une image</string>
+    <string name="add_place_name_input">@string/item_place_name</string>
+    <string name="add_place_description_input">@string/item_place_description</string>
+    <string name="add_place_service_title">Les services</string>
+    <string name="add_place_service_description">Description du service</string>
+    <string name="add_place_service_minimal_price_input">prix minimum</string>
+    <string name="add_place_service_maximal_price_input">prix maximum</string>
+
+    <string name="add_place_confirm_button">Confirmer</string>
+
+    <!-- Fenetre Popup de detail -->
+    <string name="popup_place_name">Place Name</string>
+    <string name="popup_place_description_title">Description</string>
+    <string name="popup_place_description_subtitle">Petite description</string>
+    <string name="popup_place_service_title">Services</string>
+    <string name="popup_place_service_subtitle">Description du service</string>
+
+
+    <!-- Place customise -->
+    <string name="item_place_name">Nom de l\'Etablissement</string>
+    <string name="item_place_description">Description du lieu</string>
+
+</resources>
