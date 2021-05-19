@@ -4,6 +4,7 @@ import android.app.ActivityManager
 
 class EtablissementModel (
 
+        val id : Int = 0,
         val name: String = "Kunga & fils",
         val description: String = "Hotel tres calme",
         val municipality : String = "Mont-Ngafula",

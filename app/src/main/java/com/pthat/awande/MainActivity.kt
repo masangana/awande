@@ -9,11 +9,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Injection du fragment dans la boite (fragment container)
+        //charger l'EtablissementRepository
+        val EtablissementRepo = EtablissementRepository()
 
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container, HomeFragment(this))
-        transaction.addToBackStack(null)
-        transaction.commit()
+        // mise à jour de la liste d'etablissment
+
+        EtablissementRepo.updateDate{
+            //Injection du fragment dans la boite (fragment container)
+
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragment_container, HomeFragment(this))
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+
     }
 }

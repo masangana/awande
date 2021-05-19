@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.pthat.awande.EtablissementModel
+import com.pthat.awande.EtablissementRepository
 import com.pthat.awande.MainActivity
 import com.pthat.awande.R
 
@@ -36,6 +37,9 @@ class EtablissementAdaptater(
         // Recuperation info de la place
         val currentEtablissement = EtablissementList[position]
 
+        //recuperation du repository
+        val repo = EtablissementRepository()
+
         //utilisation de glide pour recuperer une image depuis son lien
         Glide.with(context).load(Uri.parse(currentEtablissement.imageUrl)).into(holder.EtablissementImage)
 
@@ -49,9 +53,19 @@ class EtablissementAdaptater(
         //verifie if the etablissement were liked
 
         if (currentEtablissement.liked){
-
+            holder.StarIcon.setImageResource(R.drawable.ic_star)
         }else{
+            holder.StarIcon.setImageResource(R.drawable.ic_unstar)
+        }
 
+        // rajout de l'interaction avec le liked button
+        holder.StarIcon.setOnClickListener{
+            //inversion de l'image en fonction de l'état du button ainsi il change d'etat
+            currentEtablissement.liked = !currentEtablissement.liked
+
+            // mise à jour de l'objet etablissement
+
+            repo.updateEtablissement(currentEtablissement)
         }
 
     }
